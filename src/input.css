@@ -1095,15 +1095,22 @@ body{
         font-size: 14px;
         margin-bottom: -15px;
     }
+    .overlay-nav-bottom{
+        margin-top: -15px;
+    }
+    .overlay-nav{
+        padding: 30px 25px;
+    }
+    .socials{
+        margin-top: 15px;
+    }
   }
 
   @media(max-width: 360px){
     .top-container{
        padding: 50px 25px;
     }
-    .overlay-nav{
-        padding: 50px 25px;
-    }
+    
     .socials i{
         font-size: 35px;
     }

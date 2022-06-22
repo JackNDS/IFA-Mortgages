@@ -1785,12 +1785,20 @@ body{
     margin-bottom: 10px;
   }
 
+  .overlay-nav-menu ul li{
+    margin-bottom: 1.5rem;
+  }
+
   .overlay-nav-menu ul li a{
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .overlay-nav{
     padding: 50px 80px;
+  }
+
+  .overlay-nav-bottom{
+    margin-top: -10px;
   }
 
   .section2{
@@ -1832,7 +1840,7 @@ body{
   }
 
   .socials i{
-    font-size: 45px;
+    font-size: 35px;
   }
 
   .services-container .card{
@@ -1879,7 +1887,7 @@ body{
   }
 
   .socials i{
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .logo2{
@@ -1892,6 +1900,18 @@ body{
 
   .services-container .card{
     width: 90%;
+  }
+
+  .overlay-nav-menu ul li a{
+    font-size: 25px;
+  }
+
+  .overlay-nav-bottom{
+    margin-top: -20px;
+  }
+
+  .overlay-nav-bottom a{
+    margin-bottom: -10px;
   }
 }
 

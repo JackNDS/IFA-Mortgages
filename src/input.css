@@ -90,7 +90,7 @@ body{
     justify-content: space-between;
     left: 0;
     padding-bottom: 120px;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 20px;
     z-index: 300;
@@ -1069,7 +1069,13 @@ body{
         top: 38%;
     }
     .mobile-img{
-        top: 41%;
+        top: 41% !important;
+    }
+  }
+
+  @media(max-width: 380px){
+    .section3{
+        margin-top: -190px;
     }
   }
 

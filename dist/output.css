@@ -1120,7 +1120,7 @@ body{
 
 .mobile-img{
   position: absolute;
-  top: 37%;
+  top: 255px;
   background-color: #1B4B6F;
 }
 
@@ -1863,11 +1863,11 @@ body{
   }
 
   .main-buttons{
-    top: 38%;
+    top: 255px;
   }
 
   .mobile-img{
-    top: 41% !important;
+    top: 275px;
   }
 }
 

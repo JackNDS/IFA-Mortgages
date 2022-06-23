@@ -55,3 +55,36 @@ next.addEventListener('click', e => {
 prev.addEventListener('click', e => {
   prevBg();
 })
+
+
+ /* Intersection Observers */
+ const cards = document.querySelectorAll('.card');
+ const teammembers = document.querySelectorAll('.team-member');
+
+ const appearOptions = {
+   threshold: 0,
+   rootMargin: '0px 0px -120px 0px'
+ };
+ 
+ const appearOnScroll = new IntersectionObserver(function(
+   entries,
+   appearOnScroll
+ ) {
+   entries.forEach(entry => {
+     if (!entry.isIntersecting) {
+       return;
+     } else {
+       entry.target.classList.add('fade-in');
+       appearOnScroll.unobserve(entry.target);
+     }
+   });
+ },
+ appearOptions);
+ 
+ cards.forEach(card => {
+   appearOnScroll.observe(card);
+ });
+ 
+ teammembers.forEach(teammember => {
+   appearOnScroll.observe(teammember);
+ });

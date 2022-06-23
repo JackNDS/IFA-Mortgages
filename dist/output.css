@@ -834,12 +834,12 @@ body{
   box-sizing: border-box;
 }
 
-/*  main{
-    clip-path: circle(0% at 50% 50%);
-    animation: anim 1s 3s ease-in forwards;
+main{
+  -webkit-clip-path: circle(0% at 50% 50%);
+          clip-path: circle(0% at 50% 50%);
+  -webkit-animation: anim 1s 3s ease-in forwards;
+          animation: anim 1s 3s ease-in forwards;
 }
-
-*/
 
 .top-header{
   display: flex;
@@ -874,11 +874,11 @@ body{
   justify-content: space-between;
   padding: 50px 100px;
   opacity: 1;
-  /*  transform-origin: top center;
-   transform: translate3d(0,-125%,0) skewY(-5deg);
-    transition: transform 1.2s cubic-bezier(.4,0,.2,1);
-    animation: rise 2s 3.25s forwards;
-    */
+  transform-origin: top center;
+  transform: translate3d(0,-125%,0) skewY(-5deg);
+  transition: transform 1.2s cubic-bezier(.4,0,.2,1);
+  -webkit-animation: rise 2s 3.25s forwards;
+          animation: rise 2s 3.25s forwards;
 }
 
 .logo{
@@ -1096,12 +1096,12 @@ body{
   position: absolute;
   overflow: hidden;
   bottom: 45%;
-  /*  opacity: 0;
-    transform-origin: top left;
-    transform: translate3d(0,125%,0) rotate(5deg) skewY(5deg);
-    transition: transform 1.2s cubic-bezier(.4,0,.2,1);
-    animation: rise 1s 4s forwards;
-    */
+  opacity: 0;
+  transform-origin: top left;
+  transform: translate3d(0,125%,0) rotate(5deg) skewY(5deg);
+  transition: transform 1.2s cubic-bezier(.4,0,.2,1);
+  -webkit-animation: rise 1s 4s forwards;
+          animation: rise 1s 4s forwards;
 }
 
 @-webkit-keyframes rise{
@@ -1123,22 +1123,22 @@ body{
 .sub-heading{
   position: absolute;
   bottom: 38%;
-  /* opacity: 0;
-    transform-origin: top left;
-    transform: translate3d(0,125%,0) rotate(5deg) skewY(5deg);
-    transition: transform 1.2s cubic-bezier(.4,0,.2,1);
-    animation: rise 1s 4s forwards;
-   */
+  opacity: 0;
+  transform-origin: top left;
+  transform: translate3d(0,125%,0) rotate(5deg) skewY(5deg);
+  transition: transform 1.2s cubic-bezier(.4,0,.2,1);
+  -webkit-animation: rise 1s 4s forwards;
+          animation: rise 1s 4s forwards;
 }
 
 .mobile-img{
   position: absolute;
   top: 255px;
   background-color: #1B4B6F;
-  /*  opacity: 0;
-    transition: opacity 0.6s cubic-bezier(.4,0,.2,1);
-    animation: appear 1s 4.5s forwards;
-    */
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(.4,0,.2,1);
+  -webkit-animation: appear 1s 4.5s forwards;
+          animation: appear 1s 4.5s forwards;
 }
 
 .mobile-img img{
@@ -1147,10 +1147,10 @@ body{
 }
 
 .mobile-text{
-  /*   opacity: 0;
-    transition: opacity 0.6s cubic-bezier(.4,0,.2,1);
-    animation: appear 1s 4.8s forwards;
-    */
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(.4,0,.2,1);
+  -webkit-animation: appear 1s 4.8s forwards;
+          animation: appear 1s 4.8s forwards;
 }
 
 .main-buttons{
@@ -1163,12 +1163,12 @@ body{
   border-radius: 20px;
   transition: 0.3s all ease-in-out;
   border: 0.5px solid #fff;
-  /*  opacity: 0;
-    transform-origin: top left;
-    transform: translate3d(0,125%,0) rotate(5deg) skewY(5deg);
-    transition: transform 1.2s cubic-bezier(.4,0,.2,1), background-color 0.5s, color 0.5s;
-    animation: rise 1s 4s forwards;
-    */
+  opacity: 0;
+  transform-origin: top left;
+  transform: translate3d(0,125%,0) rotate(5deg) skewY(5deg);
+  transition: transform 1.2s cubic-bezier(.4,0,.2,1), background-color 0.5s, color 0.5s;
+  -webkit-animation: rise 1s 4s forwards;
+          animation: rise 1s 4s forwards;
 }
 
 .learn-more:hover{
@@ -1182,12 +1182,12 @@ body{
   border: 0.5px solid #fff;
   color: #fff;
   transition: 0.4s all ease-in-out;
-  /* opacity: 0;
-    transform-origin: top left;
-    transform: translate3d(0,125%,0) rotate(5deg) skewY(5deg);
-    transition: transform 1.2s cubic-bezier(.4,0,.2,1), background-color 0.5s, color 0.5s;
-    animation: rise 1s 4s forwards;
-    */
+  opacity: 0;
+  transform-origin: top left;
+  transform: translate3d(0,125%,0) rotate(5deg) skewY(5deg);
+  transition: transform 1.2s cubic-bezier(.4,0,.2,1), background-color 0.5s, color 0.5s;
+  -webkit-animation: rise 1s 4s forwards;
+          animation: rise 1s 4s forwards;
 }
 
 .book:hover{
@@ -1227,10 +1227,10 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
-  opacity: 0;
-  /* animation: disappear 0.25s 3s forwards;
-    transition: 0.4s all;
-    */
+  opacity: 1;
+  -webkit-animation: disappear 0.25s 3s forwards;
+          animation: disappear 0.25s 3s forwards;
+  transition: 0.4s all;
 }
 
 .loader-logo img{

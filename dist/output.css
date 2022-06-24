@@ -833,6 +833,7 @@ body{
   z-index: 2;
   box-sizing: border-box;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 .main{

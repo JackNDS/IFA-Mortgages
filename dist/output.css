@@ -2126,13 +2126,14 @@ body{
   }
 
   .section3{
-    margin-top: -110px;
+    margin-top: -90px;
+    padding-top: 0;
   }
 }
 
 @media(max-width: 380px){
   .section3{
-    margin-top: -160px;
+    margin-top: -130px;
   }
 
   .overlay-nav-bottom a{
@@ -2181,7 +2182,7 @@ body{
   }
 
   .section3{
-    margin-top: -180px;
+    margin-top: -150px;
   }
 
   .services-container .card{
@@ -2203,7 +2204,7 @@ body{
   }
 
   .section3{
-    margin-top: -210px;
+    margin-top: -180px;
   }
 
   .about-description{
@@ -2222,7 +2223,7 @@ body{
   }
 
   .section3{
-    margin-top: -230px;
+    margin-top: -200px;
   }
 
   .about-description{

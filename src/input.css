@@ -1292,13 +1292,14 @@ transform-origin: top center;
         top: 286px;
     }
     .section3{
-        margin-top: -110px;
+        margin-top: -90px;
+        padding-top: 0;
     }
   }
 
   @media(max-width: 380px){
     .section3{
-        margin-top: -160px;
+        margin-top: -130px;
     }
     .overlay-nav-bottom a{
         font-size: 14px;
@@ -1338,7 +1339,7 @@ transform-origin: top center;
         left: 25px;
     }
     .section3{
-        margin-top: -180px;
+        margin-top: -150px;
     }
     .services-container .card{
         width: 90%;
@@ -1356,7 +1357,7 @@ transform-origin: top center;
         padding: 50px 15px;
     }
     .section3{
-        margin-top: -210px;
+        margin-top: -180px;
     }
     .about-description{
         padding-left: 30px;
@@ -1374,7 +1375,7 @@ transform-origin: top center;
         padding: 50px 5px;
     }
     .section3{
-        margin-top: -230px;
+        margin-top: -200px;
     }
     .about-description{
         padding-left: 13px;

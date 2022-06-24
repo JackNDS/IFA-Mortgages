@@ -834,7 +834,8 @@ body{
   box-sizing: border-box;
 }
 
-main{
+.main{
+  height: 100vh;
   -webkit-clip-path: circle(0% at 50% 50%);
           clip-path: circle(0% at 50% 50%);
   -webkit-animation: anim 1s 3s ease-in forwards;
@@ -1057,12 +1058,6 @@ main{
   transform: translate(51%);
 }
 
-.main{
-  height: 100vh;
-  position: relative;
-  margin-bottom: -30px;
-}
-
 .background{
   position: absolute;
   z-index: 1;
@@ -1135,10 +1130,13 @@ main{
   position: absolute;
   top: 255px;
   background-color: #1B4B6F;
-  opacity: 0;
+  opacity: 1;
+  z-index: -1;
   transition: opacity 0.6s cubic-bezier(.4,0,.2,1);
-  -webkit-animation: appear 1s 4.5s forwards;
-          animation: appear 1s 4.5s forwards;
+  -webkit-clip-path: circle(0% at 50% 20%);
+          clip-path: circle(0% at 50% 20%);
+  -webkit-animation: anim 1s 3s ease-in forwards;
+          animation: anim 1s 3s ease-in forwards;
 }
 
 .mobile-img img{
@@ -1194,18 +1192,6 @@ main{
   background-color: #fff;
   color: #000;
 }
-
-/*.loaders{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: #1B4B6F;
-    z-index: 999;
-    opacity: 1;
-    width: 100%;
-    height: 100vh;
-  }*/
 
 @-webkit-keyframes anim {
   to {
@@ -1691,6 +1677,10 @@ main{
   transition: 0.4s all;
 }
 
+.section3-button button:hover{
+  transform: scale(1.1);
+}
+
 .section3 .spacer{
   background-color: #29ABE2;
   height: 2px;
@@ -1956,10 +1946,6 @@ main{
 
   .mobile-img img{
     display: block;
-  }
-
-  .main{
-    height: auto;
   }
 
   .services-container .card{

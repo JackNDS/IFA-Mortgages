@@ -66,14 +66,17 @@
 
 }
 
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     background-color: #1B4B6F;
     padding: 0;
     margin: 0;
     z-index: 2;
     box-sizing: border-box;
-    overflow-x: hidden;
-    max-width: 100%;
 }
 
 .main{
@@ -1321,9 +1324,9 @@ transform-origin: top center;
   
   .form-heading::after{
     content: "";
-    height: 3px;
-    width: 36px;
-    background-color: var(--primary-color);
+    height: 2px;
+    width: 116px;
+    background-color: #123753;
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -1612,11 +1615,10 @@ transform-origin: top center;
     .footer-section:nth-child(2){
         order: 3;
     }
-    .formbox{
-        flex-direction: column;
-      }
-      .inputs{
-        width: 100%;
+    
+
+      .form-heading::after{
+        display: none;
       }
     
   }
@@ -1645,6 +1647,12 @@ transform-origin: top center;
       }
       .floating-contact-form .field-container .fa-sticky-note {
         left: 11px !important;
+      }
+      .formbox{
+        flex-direction: column;
+      }
+      .inputs{
+        width: 100%;
       }
   }
 

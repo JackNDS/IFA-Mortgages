@@ -1304,7 +1304,7 @@ transform-origin: top center;
     opacity: 0;
     pointer-events: none;
     transition: all 500ms ease;
-    z-index: 101;
+    z-index: 301;
     background-color: #1B4B6F;
     border: 1px solid #fff;
   }

@@ -90,7 +90,7 @@ body{
     position: absolute;
     right: 0;
     top: 20px;
-    z-index: 300;
+    z-index: 299;
     /* visibility: hidden;
     opacity: 0;
     */
@@ -140,7 +140,7 @@ transform-origin: top center;
     height: 60px;
     width: auto;
     transition: 0.4s all;
-    z-index: 399;
+    z-index: 300;
     top: 39px;
     left: 100px;
     opacity: 1;
@@ -1483,7 +1483,7 @@ transform-origin: top center;
         opacity: 0;
         pointer-events: none;
         transition: all 500ms ease;
-        z-index: 101;
+        z-index: 301;
       }
       .floating-contact-form form input[type="text"],
       .floating-contact-form form input[type="email"],

@@ -46,3 +46,35 @@ const burger = document.querySelector('.hamburger');
           }
         });
       });
+
+
+      /* Intersection Observers */
+      const cards = document.querySelectorAll('.choose-us-card');
+      const cards2 = document.querySelectorAll('.card');
+
+      const appearOptions = {
+        threshold: 0,
+        rootMargin: '0px 0px 220px 0px'
+      };
+      
+      const appearOnScroll = new IntersectionObserver(function(
+        entries,
+        appearOnScroll
+      ) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add('fade-in');
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions);
+      
+      cards.forEach(card => {
+        appearOnScroll.observe(card);
+      });
+      cards2.forEach(card => {
+        appearOnScroll.observe(card);
+      });

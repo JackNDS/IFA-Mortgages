@@ -968,6 +968,7 @@ video {
 html, body{
   max-width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 body{
@@ -2815,7 +2816,16 @@ body{
     transform: translateZ(0);
   }
 
-  .services-container .card:nth-child(4){
+  .services-container .card:nth-child(4),
+    .services-container .card:nth-child(5),
+    .services-container .card:nth-child(6),
+    .services-container .card:nth-child(7),
+    .services-container .card:nth-child(8),
+    .services-container .card:nth-child(9),
+    .services-container .card:nth-child(10),
+    .services-container .card:nth-child(11),
+    .services-container .card:nth-child(12)
+    {
     opacity: 1;
     transform: translateZ(0);
   }

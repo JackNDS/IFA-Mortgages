@@ -2771,6 +2771,18 @@ body{
   transform: scale(1.2);
 }
 
+.award{
+  position: absolute;
+  top: 23.5%;
+  right: 23.5%;
+  z-index: 99;
+}
+
+.award img{
+  height: 120px;
+  width: 120px;
+}
+
 /* Media Queries */
 
 @media(max-width: 1300px){
@@ -3601,6 +3613,10 @@ body{
 }
 
 @media (min-width: 976px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;

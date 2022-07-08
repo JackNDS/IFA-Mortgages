@@ -1805,6 +1805,18 @@ transform-origin: top center;
   }
 
 
+  .award{
+    position: absolute;
+    top: 23.5%;
+    right: 23.5%;
+    z-index: 99;
+  }
+  .award img{
+    height: 120px;
+    width: 120px;
+  }
+
+
   /* Media Queries */
   @media(max-width: 1300px){
     .team-member{

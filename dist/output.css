@@ -997,8 +997,8 @@ body{
   height: 100vh;
   -webkit-clip-path: circle(0% at 50% 50%);
           clip-path: circle(0% at 50% 50%);
-  -webkit-animation: anim 1s 3s ease-in forwards;
-          animation: anim 1s 3s ease-in forwards;
+  -webkit-animation: anim 1s 3s ease-out forwards;
+          animation: anim 1s 3s ease-out forwards;
 }
 
 .about{

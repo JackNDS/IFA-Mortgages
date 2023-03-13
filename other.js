@@ -15,21 +15,21 @@ const burger2 = document.querySelector('.hamburger');
       const formInputs2 = document.querySelectorAll(".floating-contact-form .form-container .form-input");
       const contactIcon2 = document.querySelector(".floating-contact-form .contact-icon");
       const formContainer2 = document.querySelector(".floating-contact-form .form-container");
-      const xBtn = document.querySelector(".menu-close");
-      const contactBtn1 = document.querySelector(".contact-button1")
-      const contactBtn2 = document.querySelector(".contact-button2")
+      const xBtn2 = document.querySelector(".menu-close");
+      const contactBtn4 = document.querySelector(".contact-button1")
+      const contactBtn5 = document.querySelector(".contact-button2")
      
 
       contactIcon2.addEventListener('click', () => {
         formContainer2.classList.toggle("active");
       })
-      xBtn.addEventListener('click', () => {
+      xBtn2.addEventListener('click', () => {
         formContainer2.classList.toggle("active");
       })
-      contactBtn1.addEventListener('click', () => {
+      contactBtn4.addEventListener('click', () => {
         formContainer2.classList.toggle("active");
       })
-      contactBtn2.addEventListener('click', () => {
+      contactBtn5.addEventListener('click', () => {
         formContainer2.classList.toggle("active");
       })
 

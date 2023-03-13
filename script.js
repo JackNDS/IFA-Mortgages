@@ -144,7 +144,7 @@ const burger = document.querySelector('.hamburger');
 
       const appearOptions = {
         threshold: 0,
-        rootMargin: '0px 0px -120px 0px'
+        rootMargin: '0px 0px 120px 0px'
       };
       
       const appearOnScroll = new IntersectionObserver(function(

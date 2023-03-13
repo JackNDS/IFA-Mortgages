@@ -18,7 +18,7 @@ const burger = document.querySelector('.hamburger');
       const next = document.querySelector('#next');
       const prev = document.querySelector('#prev');
       const auto = true;
-      const intervalTime = 8000;
+      const intervalTime = 3000;
       let slideInterval;
 
       const nextBg = () => {

@@ -1,45 +1,45 @@
 var red = document.getElementById('menu');
-const nav2 = document.querySelector('.overlay-nav-main-wrap');
-const topcontainer2 = document.querySelector('.top-container2');
-const burger2 = document.querySelector('.hamburger');
+const nav = document.querySelector('.overlay-nav-main-wrap');
+const topcontainer = document.querySelector('.top-container2');
+const burger = document.querySelector('.hamburger');
 
     menu.addEventListener('click', menuActive);
 
     function menuActive(){
-        nav2.classList.toggle('nav-open');
-        topcontainer2.classList.toggle('nav-open');
-        burger2.classList.toggle('open');
+        nav.classList.toggle('nav-open');
+        topcontainer.classList.toggle('nav-open');
+        burger.classList.toggle('open');
 
     };
 
-      const formInputs2 = document.querySelectorAll(".floating-contact-form .form-container .form-input");
-      const contactIcon2 = document.querySelector(".floating-contact-form .contact-icon");
-      const formContainer2 = document.querySelector(".floating-contact-form .form-container");
-      const xBtn2 = document.querySelector(".menu-close");
-      const contactBtn4 = document.querySelector(".contact-button1")
-      const contactBtn5 = document.querySelector(".contact-button2")
+      const formInputs = document.querySelectorAll(".floating-contact-form .form-container .form-input");
+      const contactIcon = document.querySelector(".floating-contact-form .contact-icon");
+      const formContainer = document.querySelector(".floating-contact-form .form-container");
+      const xBtn = document.querySelector(".menu-close");
+      const contactBtn1 = document.querySelector(".contact-button1")
+      const contactBtn2 = document.querySelector(".contact-button2")
      
 
-      contactIcon2.addEventListener('click', () => {
-        formContainer2.classList.toggle("active");
+      contactIcon.addEventListener('click', () => {
+        formContainer.classList.toggle("active");
       })
-      xBtn2.addEventListener('click', () => {
-        formContainer2.classList.toggle("active");
+      xBtn.addEventListener('click', () => {
+        formContainer.classList.toggle("active");
       })
-      contactBtn4.addEventListener('click', () => {
-        formContainer2.classList.toggle("active");
+      contactBtn1.addEventListener('click', () => {
+        formContainer.classList.toggle("active");
       })
-      contactBtn5.addEventListener('click', () => {
-        formContainer2.classList.toggle("active");
+      contactBtn2.addEventListener('click', () => {
+        formContainer.classList.toggle("active");
       })
 
-      formInputs2.forEach(i => {
+      formInputs.forEach(i => {
         i.addEventListener("focus", () => {
           i.previousElementSibling.classList.add("active");
         })
       })
      
-      formInputs2.forEach(i => {
+      formInputs.forEach(i => {
         i.addEventListener("blur", () => {
           if(i.value === ""){
           i.previousElementSibling.classList.remove("active");
@@ -49,16 +49,16 @@ const burger2 = document.querySelector('.hamburger');
 
 
       /* Intersection Observers */
-      const cards3 = document.querySelectorAll('.choose-us-card');
-      const cards4 = document.querySelectorAll('.card');
-      const teammembers2 = document.querySelectorAll('.team-member2');
+      const cards = document.querySelectorAll('.choose-us-card');
+      const cards2 = document.querySelectorAll('.card');
+      const teammembers = document.querySelectorAll('.team-member2');
 
-      const appearOptions2 = {
+      const appearOptions = {
         threshold: 0,
         rootMargin: '0px 0px 220px 0px'
       };
       
-      const appearOnScroll2 = new IntersectionObserver(function(
+      const appearOnScroll = new IntersectionObserver(function(
         entries,
         appearOnScroll
       ) {
@@ -67,20 +67,20 @@ const burger2 = document.querySelector('.hamburger');
             return;
           } else {
             entry.target.classList.add('fade-in');
-            appearOnScroll2.unobserve(entry.target);
+            appearOnScroll.unobserve(entry.target);
           }
         });
       },
-      appearOptions2);
+      appearOptions);
       
-      cards3.forEach(card => {
-        appearOnScroll2.observe(card);
+      cards.forEach(card => {
+        appearOnScroll.observe(card);
       });
-      cards4.forEach(card => {
-        appearOnScroll2.observe(card);
+      cards2.forEach(card => {
+        appearOnScroll.observe(card);
       });
-      teammembers2.forEach(teammember => {
-        appearOnScroll2.observe(teammember);
+      teammembers.forEach(teammember => {
+        appearOnScroll.observe(teammember);
       });
 
 

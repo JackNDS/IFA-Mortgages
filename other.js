@@ -53,12 +53,12 @@ const burger2 = document.querySelector('.hamburger');
       const cards4 = document.querySelectorAll('.card');
       const teammembers2 = document.querySelectorAll('.team-member2');
 
-      const appearOptions = {
+      const appearOptions2 = {
         threshold: 0,
         rootMargin: '0px 0px 220px 0px'
       };
       
-      const appearOnScroll = new IntersectionObserver(function(
+      const appearOnScroll2 = new IntersectionObserver(function(
         entries,
         appearOnScroll
       ) {
@@ -67,20 +67,20 @@ const burger2 = document.querySelector('.hamburger');
             return;
           } else {
             entry.target.classList.add('fade-in');
-            appearOnScroll.unobserve(entry.target);
+            appearOnScroll2.unobserve(entry.target);
           }
         });
       },
-      appearOptions);
+      appearOptions2);
       
       cards3.forEach(card => {
-        appearOnScroll.observe(card);
+        appearOnScroll2.observe(card);
       });
       cards4.forEach(card => {
-        appearOnScroll.observe(card);
+        appearOnScroll2.observe(card);
       });
       teammembers2.forEach(teammember => {
-        appearOnScroll.observe(teammember);
+        appearOnScroll2.observe(teammember);
       });
 
 

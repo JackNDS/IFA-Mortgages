@@ -1,13 +1,14 @@
 var red = document.getElementById('menu');
-const topcontainer = document.querySelector('.top-container2');
-const burger = document.querySelector('.hamburger');
+const nav2 = document.querySelector('.overlay-nav-main-wrap');
+const topcontainer2 = document.querySelector('.top-container2');
+const burger2 = document.querySelector('.hamburger');
 
     menu.addEventListener('click', menuActive);
 
     function menuActive(){
-        nav.classList.toggle('nav-open');
-        topcontainer.classList.toggle('nav-open');
-        burger.classList.toggle('open');
+        nav2.classList.toggle('nav-open');
+        topcontainer2.classList.toggle('nav-open');
+        burger2.classList.toggle('open');
 
     };
 

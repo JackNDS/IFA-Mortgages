@@ -1,5 +1,4 @@
 var red = document.getElementById('menu');
-const nav = document.querySelector('.overlay-nav-main-wrap');
 const topcontainer = document.querySelector('.top-container2');
 const burger = document.querySelector('.hamburger');
 

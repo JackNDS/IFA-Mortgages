@@ -51,7 +51,7 @@ const burger2 = document.querySelector('.hamburger');
       /* Intersection Observers */
       const cards3 = document.querySelectorAll('.choose-us-card');
       const cards4 = document.querySelectorAll('.card');
-      const teammembers = document.querySelectorAll('.team-member2');
+      const teammembers2 = document.querySelectorAll('.team-member2');
 
       const appearOptions = {
         threshold: 0,
@@ -79,7 +79,7 @@ const burger2 = document.querySelector('.hamburger');
       cards4.forEach(card => {
         appearOnScroll.observe(card);
       });
-      teammembers.forEach(teammember => {
+      teammembers2.forEach(teammember => {
         appearOnScroll.observe(teammember);
       });
 

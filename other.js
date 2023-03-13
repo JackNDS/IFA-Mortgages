@@ -12,34 +12,34 @@ const burger2 = document.querySelector('.hamburger');
 
     };
 
-      const formInputs = document.querySelectorAll(".floating-contact-form .form-container .form-input");
-      const contactIcon = document.querySelector(".floating-contact-form .contact-icon");
-      const formContainer = document.querySelector(".floating-contact-form .form-container");
+      const formInputs2 = document.querySelectorAll(".floating-contact-form .form-container .form-input");
+      const contactIcon2 = document.querySelector(".floating-contact-form .contact-icon");
+      const formContainer2 = document.querySelector(".floating-contact-form .form-container");
       const xBtn = document.querySelector(".menu-close");
       const contactBtn1 = document.querySelector(".contact-button1")
       const contactBtn2 = document.querySelector(".contact-button2")
      
 
-      contactIcon.addEventListener('click', () => {
-        formContainer.classList.toggle("active");
+      contactIcon2.addEventListener('click', () => {
+        formContainer2.classList.toggle("active");
       })
       xBtn.addEventListener('click', () => {
-        formContainer.classList.toggle("active");
+        formContainer2.classList.toggle("active");
       })
       contactBtn1.addEventListener('click', () => {
-        formContainer.classList.toggle("active");
+        formContainer2.classList.toggle("active");
       })
       contactBtn2.addEventListener('click', () => {
-        formContainer.classList.toggle("active");
+        formContainer2.classList.toggle("active");
       })
 
-      formInputs.forEach(i => {
+      formInputs2.forEach(i => {
         i.addEventListener("focus", () => {
           i.previousElementSibling.classList.add("active");
         })
       })
      
-      formInputs.forEach(i => {
+      formInputs2.forEach(i => {
         i.addEventListener("blur", () => {
           if(i.value === ""){
           i.previousElementSibling.classList.remove("active");

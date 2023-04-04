@@ -209,3 +209,40 @@ const burger = document.querySelector('.hamburger');
           }
         });
       });
+
+
+      /* Blog */
+      const blogContainer = document.getElementById("blog-container");
+
+// Add your blog posts in the following format:
+const blogPosts = [
+    {
+        title: "My First Blog Post",
+        date: "April 1, 2023",
+        content: "<p>This is the content of my first blog post.</p>"
+    },
+    {
+        title: "My Second Blog Post",
+        date: "April 2, 2023",
+        content: "<p>This is the content of my second blog post.</p>"
+    }
+];
+
+function renderBlogPosts() {
+    blogContainer.innerHTML = "";
+
+    blogPosts.forEach(post => {
+        const blogPost = document.createElement("div");
+        blogPost.classList.add("blog-post");
+
+        blogPost.innerHTML = `
+            <h2>${post.title}</h2>
+            <small>${post.date}</small>
+            <div>${post.content}</div>
+        `;
+
+        blogContainer.appendChild(blogPost);
+    });
+}
+
+renderBlogPosts();

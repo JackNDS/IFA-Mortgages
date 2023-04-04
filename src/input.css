@@ -758,6 +758,9 @@ body {
 .overlay-nav-menu li:nth-child(4) .overlay-nav-link span {
   transition-delay: 0.7s;
 }
+.overlay-nav-menu li:nth-child(5) .overlay-nav-link span {
+  transition-delay: 0.8s;
+}
 
 .overlay-nav-secondary ul {
   display: flex;
@@ -1610,6 +1613,64 @@ body {
   transform-origin: top left;
   transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
   animation: appear 1s 1.8s forwards;
+}
+
+/* Blog */
+#blog-container {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.blog-post {
+  background-color: #1a4b7e;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  flex: 1 1 calc(33% - 2rem);
+  min-height: 150px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.blog-post.open {
+  flex: 1 1 100%;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  font-size: 22px;
+  font-family: 'gothammedium';
+}
+
+.blog-post-content {
+  display: none;
+  font-size: 18px;
+  font-family: 'gothamlight';
+}
+
+.blog-post small {
+  font-size: 14px;
+  font-family: 'gothamlight';
+}
+
+.blog-post-excerpt {
+  font-size: 18px;
+  font-family: 'gothamlight';
+}
+
+.blog-post.open .blog-post-content {
+  display: block;
+}
+
+.blog-post.open .blog-post-excerpt {
+  display: none;
 }
 
 /* Our Team */

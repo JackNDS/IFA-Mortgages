@@ -48,6 +48,8 @@ const burger = document.querySelector('.hamburger');
       });
 
 
+
+
       /* Intersection Observers */
       const cards = document.querySelectorAll('.choose-us-card');
       const cards2 = document.querySelectorAll('.card');
@@ -113,4 +115,3 @@ const burger = document.querySelector('.hamburger');
       checkmarkFletcher.addEventListener('click', () => {
         teamopenFletcher.classList.remove("active");
       })
-

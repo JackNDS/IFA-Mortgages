@@ -1622,7 +1622,7 @@ body {
   padding: 0 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1px;
+  gap: 10px;
 }
 
 .blog-post {
@@ -1637,6 +1637,7 @@ body {
   overflow: hidden;
   transition: all 0.3s ease;
   color: #fff;
+  margin: 5px;
 }
 
 .blog-post.open {

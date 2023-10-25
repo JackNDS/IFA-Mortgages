@@ -78,7 +78,7 @@ const burger = document.querySelector('.hamburger');
 
         // Testimonials
         const slides = document.querySelectorAll('.slide');
-        const intervalTime2 = 6500;
+        const intervalTime2 = 9500;
         const next2 = document.querySelector('#next2');
         const prev2 = document.querySelector('#prev2');
         let slideInterval2;

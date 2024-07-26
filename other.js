@@ -87,12 +87,15 @@ const burger = document.querySelector('.hamburger');
 
 
       const luke = document.getElementById("luke");
+      const paul = document.getElementById("paul");
       const teamopenLuke = document.querySelector(".team-open.luke");
+      const teamopenPaul = document.querySelector(".team-open.paul");
       const anthony = document.getElementById("anthony");
       const teamopenAnthony = document.querySelector(".team-open.anthony");
       const fletcher = document.getElementById("fletcher");
       const teamopenFletcher = document.querySelector(".team-open.fletcher");
       const checkmarkLuke = document.querySelector(".team-open.luke .team-open-icon");
+      const checkmarkPaul = document.querySelector(".team-open.paul .team-open-icon");
       const checkmarkAnthony = document.querySelector(".team-open.anthony .team-open-icon");
       const checkmarkFletcher = document.querySelector(".team-open.fletcher .team-open-icon");
      
@@ -106,11 +109,17 @@ const burger = document.querySelector('.hamburger');
       fletcher.addEventListener('click', () => {
         teamopenFletcher.classList.add("active");
       })
+      paul.addEventListener('click', () => {
+        teamopenPaul.classList.add("active");
+      })
       checkmarkLuke.addEventListener('click', () => {
         teamopenLuke.classList.remove("active");
       })
       checkmarkAnthony.addEventListener('click', () => {
         teamopenAnthony.classList.remove("active");
+      })
+      checkmarkPaul.addEventListener('click', () => {
+        teamopenPaul.classList.remove("active");
       })
       checkmarkFletcher.addEventListener('click', () => {
         teamopenFletcher.classList.remove("active");
